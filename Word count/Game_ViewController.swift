@@ -17,12 +17,15 @@ class Game_ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userTF: UITextField!
     
-    var secondCountDown = 5
+    var secondCountDown = Difficulty.difficulties.dataToPass
     var score = 0
     var Words : [String] = ["hello" , "gum" , "profit" , "rich"
                             , "palm" , "value" , "friendly" , "aunt"
                             , "oak" , "village", "spring" , "heel"
-                            , "ask" , "chin" , "chief"]
+                            , "ask" , "chin" , "chief" , "Dad"
+                            , "adjust" , "jacket" , "honor" , "solve"
+                            , "platform" , "nuclear" , "normal" , "sea"
+                            , "drive" , "coal" , "cycle" , "mother"]
     
     var Position = 0
     
@@ -40,7 +43,7 @@ class Game_ViewController: UIViewController, UITextFieldDelegate {
         timeLabel.text = ":0\(secondCountDown)"
         secondCountDown -= 1
         if secondCountDown == -1{
-            secondCountDown = 5
+            secondCountDown = Difficulty.difficulties.dataToPass
             score -= 1
             scoreLabel.text = "Score: \(score)"
             wordsFunc()
@@ -75,7 +78,7 @@ class Game_ViewController: UIViewController, UITextFieldDelegate {
         }
         
         wordsFunc()
-        secondCountDown = 5
+        secondCountDown = Difficulty.difficulties.dataToPass
         countDown()
         return true
     }
