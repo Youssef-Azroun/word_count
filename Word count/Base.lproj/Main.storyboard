@@ -17,19 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpeedWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJY-79-2mH">
-                                <rect key="frame" x="20" y="162" width="273" height="35.666666666666657"/>
+                                <rect key="frame" x="10" y="162" width="373" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="319-3192667_sikkim-blog-transparent-background-typewriter-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wEr-sm-8dd">
-                                <rect key="frame" x="260" y="138" width="73" height="84"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OC-JL-MoJ">
-                                <rect key="frame" x="121.66666666666669" y="408.66666666666669" width="150" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="ny5-Eq-FCe"/>
-                                </constraints>
+                                <rect key="frame" x="142.66666666666666" y="408.66666666666669" width="108" height="35"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start game">
@@ -42,10 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU6-La-f6L">
-                                <rect key="frame" x="121.66666666666669" y="562.66666666666663" width="150" height="35.333333333333371"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="2PR-q6-cIR"/>
-                                </constraints>
+                                <rect key="frame" x="139.66666666666666" y="563.66666666666663" width="113.66666666666666" height="34.333333333333371"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="How to play">
@@ -61,20 +52,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.10750174994677206" green="0.11114532730007037" blue="0.11404025677553153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oJY-79-2mH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Pp-PX-loe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJY-79-2mH" secondAttribute="trailing" constant="100" id="AqW-Kt-btr"/>
-                            <constraint firstItem="NU6-La-f6L" firstAttribute="top" secondItem="3OC-JL-MoJ" secondAttribute="bottom" constant="119.33" id="BGY-tc-8cB"/>
-                            <constraint firstItem="NU6-La-f6L" firstAttribute="centerX" secondItem="3OC-JL-MoJ" secondAttribute="centerX" id="CxZ-Zs-RwB"/>
-                            <constraint firstItem="3OC-JL-MoJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DFB-zs-cTy"/>
-                            <constraint firstItem="wEr-sm-8dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="260" id="FQV-E7-ejw"/>
-                            <constraint firstItem="3OC-JL-MoJ" firstAttribute="leading" secondItem="NU6-La-f6L" secondAttribute="leading" id="MBt-u6-Jc5"/>
-                            <constraint firstItem="oJY-79-2mH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="TPZ-G9-11H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wEr-sm-8dd" secondAttribute="trailing" constant="60" id="gbO-zh-jGB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NU6-La-f6L" secondAttribute="bottom" constant="220" id="lFH-S2-lHU"/>
-                            <constraint firstItem="wEr-sm-8dd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="mHH-lc-iD1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wEr-sm-8dd" secondAttribute="bottom" constant="596" id="p2E-T7-gv6"/>
-                            <constraint firstItem="3OC-JL-MoJ" firstAttribute="top" secondItem="oJY-79-2mH" secondAttribute="bottom" constant="211" id="qH1-ae-M4w"/>
-                            <constraint firstItem="3OC-JL-MoJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uog-PB-maE"/>
+                            <constraint firstItem="NU6-La-f6L" firstAttribute="top" secondItem="3OC-JL-MoJ" secondAttribute="bottom" constant="120" id="36o-89-rzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NU6-La-f6L" secondAttribute="bottom" constant="220" id="7l0-6h-FcI"/>
+                            <constraint firstItem="oJY-79-2mH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="8M2-Cd-xEd"/>
+                            <constraint firstItem="NU6-La-f6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HLF-gW-vgL"/>
+                            <constraint firstItem="3OC-JL-MoJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KdA-l0-ueH"/>
+                            <constraint firstItem="oJY-79-2mH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ieo-MH-GTC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJY-79-2mH" secondAttribute="trailing" constant="10" id="qul-xH-uXf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hzo-bu-Uo7"/>
@@ -183,7 +167,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GB9-nn-bga">
                                 <rect key="frame" x="70" y="457" width="253" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-o3-mm0">
                                 <rect key="frame" x="50" y="300" width="293" height="26"/>
@@ -350,7 +334,6 @@
         <segue reference="oe3-n3-cgE"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="319-3192667_sikkim-blog-transparent-background-typewriter-icon.png" width="175.33332824707031" height="128.33332824707031"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

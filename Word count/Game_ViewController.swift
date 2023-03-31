@@ -22,7 +22,7 @@ class Game_ViewController: UIViewController, UITextFieldDelegate {
     var Words : [String] = ["hello" , "gum" , "profit" , "rich"
                             , "palm" , "value" , "friendly" , "aunt"
                             , "oak" , "village", "spring" , "heel"
-                            , "ask" , "chin" , "chief" , "Dad"
+                            , "ask" , "chin" , "chief" , "dad"
                             , "adjust" , "jacket" , "honor" , "solve"
                             , "platform" , "nuclear" , "normal" , "sea"
                             , "drive" , "coal" , "cycle" , "mother"]
@@ -45,6 +45,7 @@ class Game_ViewController: UIViewController, UITextFieldDelegate {
         if secondCountDown == -1{
             secondCountDown = Difficulty.difficulties.dataToPass
             score -= 1
+            userTF.text = ""
             scoreLabel.text = "Score: \(score)"
             wordsFunc()
         }
