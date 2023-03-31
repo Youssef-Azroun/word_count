@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startGameBtn(_ sender: UIButton) {
-        performSegue(withIdentifier: "StartGame", sender: nil)
+        performSegue(withIdentifier: "difficulty", sender: nil)
     }
     
 }

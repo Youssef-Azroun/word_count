@@ -19,6 +19,7 @@
 		31B6108A29D1417200A85991 /* HowToPlay_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B6108929D1417200A85991 /* HowToPlay_ViewController.swift */; };
 		31B6108C29D1431600A85991 /* Game_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B6108B29D1431500A85991 /* Game_ViewController.swift */; };
 		31B6108E29D1450F00A85991 /* Score_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B6108D29D1450F00A85991 /* Score_ViewController.swift */; };
+		31B6109029D686B200A85991 /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B6108F29D686B200A85991 /* DifficultyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		31B6108929D1417200A85991 /* HowToPlay_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay_ViewController.swift; sourceTree = "<group>"; };
 		31B6108B29D1431500A85991 /* Game_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_ViewController.swift; sourceTree = "<group>"; };
 		31B6108D29D1450F00A85991 /* Score_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score_ViewController.swift; sourceTree = "<group>"; };
+		31B6108F29D686B200A85991 /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				31B6108929D1417200A85991 /* HowToPlay_ViewController.swift */,
 				31B6108B29D1431500A85991 /* Game_ViewController.swift */,
 				31B6108D29D1450F00A85991 /* Score_ViewController.swift */,
+				31B6108F29D686B200A85991 /* DifficultyViewController.swift */,
 				31B6105B29CB6C4500A85991 /* Main.storyboard */,
 				31B6105E29CB6C4900A85991 /* Assets.xcassets */,
 				31B6106029CB6C4900A85991 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				31B6105A29CB6C4500A85991 /* ViewController.swift in Sources */,
 				31B6108E29D1450F00A85991 /* Score_ViewController.swift in Sources */,
 				31B6105629CB6C4500A85991 /* AppDelegate.swift in Sources */,
+				31B6109029D686B200A85991 /* DifficultyViewController.swift in Sources */,
 				31B6108A29D1417200A85991 /* HowToPlay_ViewController.swift in Sources */,
 				31B6105829CB6C4500A85991 /* SceneDelegate.swift in Sources */,
 				31B6108C29D1431600A85991 /* Game_ViewController.swift in Sources */,

@@ -38,7 +38,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KjD-Si-ceW"/>
-                                    <segue destination="K4w-Nj-r8e" kind="show" identifier="StartGame" id="rtx-XB-meg"/>
+                                    <segue destination="md5-sT-0PS" kind="show" identifier="difficulty" id="hEC-aB-bqo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU6-La-f6L">
@@ -81,7 +81,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-598" y="10"/>
+        </scene>
+        <!--Difficulty View Controller-->
+        <scene sceneID="fFz-Ea-Ggj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="md5-sT-0PS" customClass="DifficultyViewController" customModule="Word_count" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lO9-v5-yO4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMd-Jq-KlN">
+                                <rect key="frame" x="20" y="159" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxq-Ug-Juj">
+                                <rect key="frame" x="50" y="313" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Easy" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="0.14824954458301848" green="0.89484318998671064" blue="0.21260899793488575" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="easyBtn:" destination="md5-sT-0PS" eventType="touchUpInside" id="s0K-C8-Grn"/>
+                                    <segue destination="K4w-Nj-r8e" kind="show" identifier="easy" id="Oyd-hg-7Uj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymT-hn-NYS">
+                                <rect key="frame" x="50" y="442" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Normal" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="0.89484318998671064" green="0.83932177074231429" blue="0.075522726846292423" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="normalBtn:" destination="md5-sT-0PS" eventType="touchUpInside" id="aXc-q4-lUD"/>
+                                    <segue destination="K4w-Nj-r8e" kind="show" identifier="normal" id="xbU-hz-wTY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukl-cA-u8u">
+                                <rect key="frame" x="50" y="567" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hard" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="0.89484318998671064" green="0.14804485321744057" blue="0.06356239095642173" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hardBtn:" destination="md5-sT-0PS" eventType="touchUpInside" id="jk1-ms-64r"/>
+                                    <segue destination="K4w-Nj-r8e" kind="show" identifier="hard" id="LCQ-fG-P6V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YSL-Ke-R07"/>
+                        <color key="backgroundColor" red="0.1075017499" green="0.1111453273" blue="0.1140402568" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ymT-hn-NYS" firstAttribute="centerX" secondItem="lO9-v5-yO4" secondAttribute="centerX" id="1D8-bR-6nj"/>
+                            <constraint firstItem="ymT-hn-NYS" firstAttribute="top" secondItem="vxq-Ug-Juj" secondAttribute="bottom" constant="94" id="2uW-Mz-aKr"/>
+                            <constraint firstItem="YSL-Ke-R07" firstAttribute="trailing" secondItem="HMd-Jq-KlN" secondAttribute="trailing" constant="20" id="31f-j5-ZrA"/>
+                            <constraint firstItem="Ukl-cA-u8u" firstAttribute="top" secondItem="ymT-hn-NYS" secondAttribute="bottom" constant="90" id="679-nT-u2y"/>
+                            <constraint firstItem="vxq-Ug-Juj" firstAttribute="centerX" secondItem="lO9-v5-yO4" secondAttribute="centerX" id="HNR-z9-9NO"/>
+                            <constraint firstItem="HMd-Jq-KlN" firstAttribute="centerX" secondItem="lO9-v5-yO4" secondAttribute="centerX" id="JAd-vE-lvI"/>
+                            <constraint firstItem="Ukl-cA-u8u" firstAttribute="centerX" secondItem="lO9-v5-yO4" secondAttribute="centerX" id="M9z-v6-yyE"/>
+                            <constraint firstItem="vxq-Ug-Juj" firstAttribute="top" secondItem="HMd-Jq-KlN" secondAttribute="bottom" constant="124" id="NSj-Cp-GYF"/>
+                            <constraint firstItem="YSL-Ke-R07" firstAttribute="trailing" secondItem="ymT-hn-NYS" secondAttribute="trailing" constant="50" id="Q5Z-mq-ioN"/>
+                            <constraint firstItem="YSL-Ke-R07" firstAttribute="trailing" secondItem="Ukl-cA-u8u" secondAttribute="trailing" constant="50" id="Rtb-6H-u8j"/>
+                            <constraint firstItem="ymT-hn-NYS" firstAttribute="leading" secondItem="YSL-Ke-R07" secondAttribute="leading" constant="50" id="X6x-Ox-mfa"/>
+                            <constraint firstItem="Ukl-cA-u8u" firstAttribute="top" secondItem="ymT-hn-NYS" secondAttribute="bottom" constant="90" id="aKU-KL-sm4"/>
+                            <constraint firstItem="YSL-Ke-R07" firstAttribute="trailing" secondItem="vxq-Ug-Juj" secondAttribute="trailing" constant="50" id="bbf-oY-whL"/>
+                            <constraint firstItem="Ukl-cA-u8u" firstAttribute="leading" secondItem="YSL-Ke-R07" secondAttribute="leading" constant="50" id="dhH-dw-arW"/>
+                            <constraint firstItem="HMd-Jq-KlN" firstAttribute="leading" secondItem="YSL-Ke-R07" secondAttribute="leading" constant="20" id="eFL-mF-Q7r"/>
+                            <constraint firstItem="HMd-Jq-KlN" firstAttribute="top" secondItem="YSL-Ke-R07" secondAttribute="top" constant="100" id="iHD-k7-z8P"/>
+                            <constraint firstItem="ymT-hn-NYS" firstAttribute="top" secondItem="vxq-Ug-Juj" secondAttribute="bottom" constant="94" id="jZD-8M-KQE"/>
+                            <constraint firstItem="vxq-Ug-Juj" firstAttribute="leading" secondItem="YSL-Ke-R07" secondAttribute="leading" constant="50" id="ray-v9-kgd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lOR-97-s9K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXD-IH-79W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.70229007633588" y="-280.28169014084506"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="Nbi-aa-Wn4">
@@ -269,7 +346,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PZ7-ob-tzx"/>
+        <segue reference="LCQ-fG-P6V"/>
         <segue reference="oe3-n3-cgE"/>
     </inferredMetricsTieBreakers>
     <resources>
